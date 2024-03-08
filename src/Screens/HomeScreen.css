@@ -1,0 +1,368 @@
+.containerr{
+ background-color: #fff;
+
+}
+.img-sliders{
+    width: 60%;
+    border-radius: 0 15px 15px 0px;
+    
+    height: 75vh;
+    background-color: rgba(2, 191, 216, 0.801);
+    border-radius: 0 20px 20px 0;
+    margin-top: 25px;
+}
+.img-sliders img{
+    position: absolute;
+    width: 90%;
+    height: 68vh;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-radius: 0 15px 15px 0;
+}
+.img-sliders h1{
+    position: absolute;
+    margin-bottom: 80px;
+    left: 500px;
+    font-family: 'Poppins';
+    color: orangered;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+.img-sliders span{
+    left: 350px;
+    width: 50%;
+    margin-top: 90px;
+    position: absolute;
+    font-style: italic;
+    font-family: 'Poppins';
+    color:  rgb(51, 51, 234);
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.img-sliders button{
+    position: absolute;
+    width:14%;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #ffa500;
+    background-color: orangered;
+    font-size: 19px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #fff;
+    font-style: italic;
+    left: 550px;
+    margin-top: 250px;
+    cursor: pointer;
+}
+.img-sliders button:hover{
+    background-color: orange;
+    color: #000;
+}
+.Why{
+    text-align: center;
+    margin-top: 60px;
+}
+.Why h1{
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #000;
+    font-size: 35px;
+    font-style: italic;
+    margin-top: 30px;
+    
+}
+.Why span{
+    color: orangered;
+}
+.flexes{
+    display: flex;
+    margin-left: 70px;
+}
+.col-1{
+    width: 50%;
+}
+.col-1 h3{
+    margin-left: 20px;
+   color: #15bbd8;
+   width: 50%;
+}
+.col-1 p{
+    color: #000000dc;
+    width: 60%;
+    font-size: 13px;
+    font-family: 'Poppins';
+    margin-left: 120px;
+}
+.col-1 p span{
+    color: rgb(34, 196, 217);
+    font-weight: bold;
+}
+.col-1 h4{
+   margin-left: 550px;
+    top: 30px;
+    width: 60%;
+    font-size: 14px;
+    color: #15bbd8;
+    font-family: 'Poppins';
+}
+
+.spans{
+   margin-right: 25px;
+    font-size: 15px;
+}
+.btns{
+  gap: 15px;
+  display: flex;
+  margin-left: 150px;
+  /* width: 100%; */
+}
+.btn-1{
+    cursor: pointer;
+    /* margin-right: 790px; */
+    margin-top: 20px;
+    width: 20%;
+    height: 50px;
+    border-color: orangered;
+    background-color: orangered;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #fff;
+
+}
+.btn-1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn-2{
+    margin-top: 20px;
+    width: 20%;
+    height: 50px;
+    border-color: orangered;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins';
+    
+}
+.btn-2:hover{
+    background-color: orangered;
+    border-color: orangered;
+    color: #fff;
+}
+.col-2{
+    width: 50%;
+}
+.col-2 img{
+    width: 75%;
+    height: 80vh;
+    margin-top: 20px;
+    margin-right: 140px;
+    border-radius: 30px;
+}
+.contacts{
+    margin-top: 25px;
+    width: 50%;
+    margin-top: 80px;
+}
+.contacts h1{
+    width: 100%;
+    text-align: center;
+    margin-left: 330px;
+    color: #000;
+    font-style: italic;
+    font-family: 'Poppins';
+    font-size: 35px;
+    
+
+}
+.contacts h1 span{
+    color: orangered;
+}
+.us{
+    width: 10%;
+    height: 450px;
+    margin-left: 280px;
+    border-radius: 15px ;
+    justify-content:space-around;
+    
+}
+.us label{
+    margin-left:109px;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Poppins';
+    color: #fff;
+    
+    margin-bottom: 60px;
+}
+.us input{
+    height:40px;
+    width: 550px;
+    margin-left:100px;
+    border-color: orange;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+    
+
+}
+.us textarea{
+    margin-left: 100px;
+    margin-top: 5px;
+    height: 100px;
+    width: 550px;
+    border-radius:10px;
+    border-color: orangered;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.us input:after{
+    border-color: orange;
+}
+.us button{
+    height: 45px;
+    width: 570px;
+    border-color: orangered;
+    background-color: orangered;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 98px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.us button:hover{
+    background-color: orange;
+    border-color: orange;   
+  
+}
+@media screen and (max-width:780px){
+   .containerr{
+    width: 120%;
+   }
+   .img-sliders{
+    margin-left: 0px;
+    width:85%;
+    height: 360px;
+    bottom: 70px;
+   } 
+   .img-sliders img{
+    margin-left: 5px;
+      height: 60vh;
+      width: 100%;
+   }
+   .img-sliders h1{
+    position: relative;
+    text-align: center;
+    left: 47px;
+    font-size: 17px;
+    top: 30px;
+    
+   }
+   .img-sliders span{
+    position: absolute;
+    left: 10px;
+    width: 97%;
+    font-size: 13px;
+    margin-top: -45px;
+    font-weight: bold;
+   }
+   .img-sliders button{
+    position: absolute;
+    margin-top: 90px;
+    left: 50px;
+    width: 57%;
+    height: 27px;
+    font-size: 13px;
+
+
+   }
+   .flexes{
+    display: block;
+    margin-left: 0px;
+
+   }
+   .col-1{
+    width: 100%;
+    margin-left: 5px;
+   }
+   .col-1 h3{
+    margin-left: 3px;
+    width: 97%;
+    font-size: 13px;
+   }
+   .col-1 p{
+    width: 96%;
+    margin-left: 3px;
+    font-size: 12px;
+   }
+   .btns{
+    margin-left: 80px;
+   }
+   .Why h1{
+    font-size: 22px;
+    margin-right: 20px;
+   }
+   .btn-1{
+    width: 45%;
+    height: 35px;
+
+   }
+   .btn-2{
+    width: 45%;
+    height: 35px;
+   }
+   .col-2 {
+    width: 130%;
+    margin-left: 22px;
+   }
+   .contacts{
+    
+    width: 100%;
+   }
+   .contacts h1{
+    text-align: center;
+    margin-left: -18px;
+    font-size: 22px;
+    
+    
+   }
+   .us{
+    margin-left: -66px;
+    width: 100%;
+   }
+   .us input{
+    width:90%;
+    height: 30px;
+    font-size: 11px;
+   }
+   .us textarea{
+    width: 90%;
+    font-size: 11px;
+
+   } 
+   .us button{
+    margin-left: 100px;
+    width: 90%;
+    height: 35px;
+    font-size: 14px;
+   }
+   .Why h1{
+    font-size: 23px;
+   }
+   
+
+}

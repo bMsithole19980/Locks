@@ -1,0 +1,48 @@
+.Testimony{
+    width:100%;
+}
+.Testimony h1{
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+}
+.Testimony h1 span{
+    color: #ff4500;
+}
+.Testimony h3{
+    color: #787171;
+    font-size: 16px;
+    font-family: 'Poppins';
+    width: 70%;
+    margin-left: 250px;
+}
+.images h4{
+    text-align: center;
+    margin-top: 60px;
+
+}
+.pictures{
+   display: flex;
+   margin-top: 20px;
+   margin-left: 45px;
+   gap: 20px;
+}
+.pictures img{
+    width: 20%;
+    border-radius: 5px;
+}
+.Partners h2{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.Partners-img{
+    display: flex;
+    margin-top: 20px;
+   margin-left: 45px;
+   gap: 20px;
+}
+.Partners-img img{
+    width: 20%;
+    border-radius: 5px;
+}
