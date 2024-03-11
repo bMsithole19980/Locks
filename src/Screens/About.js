@@ -10,7 +10,7 @@ function About() {
         <h1>More About <span>Reliable-lock</span></h1>
         <div className="more">
           <div className="">
-            
+            <h2>Hi there </h2>
           </div>
         </div>
 
