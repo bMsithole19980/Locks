@@ -30,7 +30,6 @@ function Testimony() {
                 <img src={Sec1} alt='bike'/>
                 </div>
             </div>
-            <h5></h5>
         </div>
         
         <Footer/>
