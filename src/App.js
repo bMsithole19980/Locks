@@ -4,7 +4,6 @@ import HomeScreen from './Screens/HomeScreen';
 import Services from './Screens/Services';
 import { BrowserRouter  , Routes ,Route  } from 'react-router-dom';
 import About from './Screens/About';
-import SignUp from './Components/SignUp';
 import Testimony from './Screens/Testimony';
 import ContactUs from './Screens/ContactUs';
 
