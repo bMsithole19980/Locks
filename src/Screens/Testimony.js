@@ -3,9 +3,6 @@ import './Testimony.css';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import Sec1 from '../assets/Sec2.jpg';
-import Sec2 from '../assets/Sec3.jpg';
-import Sec3 from '../assets/Sec4.jpg';
-import Sec4 from '../assets/Sec5.jpg';
 
 
 

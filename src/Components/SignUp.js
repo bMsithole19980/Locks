@@ -33,6 +33,8 @@ function SignUp() {
       </div>
       <div className="check">
         <label>
+
+          
             <input type="checkbox"/>
             Remember me
         </label>
