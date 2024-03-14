@@ -97,49 +97,52 @@ nav{
     border-color:rgba(232, 10, 10, 0.874) ;
     color: #000;
 }
-@media screen and (max-width:780px){
-
-    .advert h2{
+@media screen and (max-width: 780px) {
+    .advert h2 {
         font-size: 15px;
     }
-    .hambuger{
-      display: block;
-      cursor: pointer;
+    .hambuger {
+        display: block;
+        cursor: pointer;
+        margin-left: x25px;
     }
-    .bar{
-        background-color: #fff;
+    .bar {
+        background-color: #000;
         width: 20px;
         height: 3px;
         display: block;
-        margin: 5px;
-        -webkit-transition:  0.3s ease-in-out;
+        margin: 6px;
+        -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out;
     }
-    .hambuger.active .bar:nth-child(2){
+    .hambuger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hambuger.active .bar:nth-child(1){
+    .hambuger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hambuger.active  .bar:nth-child(3){
+    .hambuger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .nav-links{
-        position: absolute;
+    .nav-links {
+        background-color: orangered;
+        position: fixed;
         flex-direction: column;
         gap: 0;
-        top: 70px;
+        top: 41px;
         left: -100%;
         text-align: start;
-        width: 100%;
-        transition:  0.7s ease-in-out;
+        width: 20%;
+        height: 750px;
+        transition: 0.7s ease-in-out;
+        z-index: 1;
         /* background-color: #1746A2; */
-        pad: 10px;
+        padding: 10px;  /* Corrected typo here */
     }
-    .nav-links.active{
+    .nav-links.active {
         left: 0;
     }
-    .nav-links li{
+    .nav-links li {
         margin: 16px 0;
     }
 }

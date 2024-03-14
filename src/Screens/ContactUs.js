@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './ContactUs.css';
 import Camera from '../assets/Camera.jpg';
 import NavBar from '../Components/NavBar';
@@ -6,6 +6,43 @@ import Footer from '../Components/Footer';
 import Map from '../assets/Reliablelock_Maps1.jpg'
 
 function ContactUs() {
+  
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+    cellphoneNumbers: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Send the form data to the backend server
+    const response = await fetch('http://localhost:5000/submit-form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // Handle the response (you may want to display a success message or redirect the user)
+    if (response.ok) {
+      console.log('Form submitted successfully');
+    } else {
+      console.error('Form submission failed');
+    }
+  };
+
   return (
     <div className='contact-page'>
         <NavBar/>
@@ -45,20 +82,51 @@ function ContactUs() {
         </div>
 
         <div className='form'>
-          <div className='flexy'>
-          <input  type='text' placeholder='First Name'/>
-        <input type='text' placeholder='Last Name'/>
-        
-          </div>
-      
-        <input type='text' placeholder='Email Address'/><br/>
-        <input type='text' placeholder='CellPhone Numbers'/><br/>
-        <textarea type='text' placeholder='How may we assist you...'/>
-        <br/>
-        <button>
+        <div className='flexy'>
+          <input
+            type='text'
+            placeholder='First Name'
+            name='firstName'
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+          <input
+            type='text'
+            placeholder='Last Name'
+            name='lastName'
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+        </div>
+
+        <input
+          type='text'
+          placeholder='Email Address'
+          name='emailAddress'
+          value={formData.emailAddress}
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          type='text'
+          placeholder='CellPhone Numbers'
+          name='cellphoneNumbers'
+          value={formData.cellphoneNumbers}
+          onChange={handleChange}
+        />
+        <br />
+        <textarea
+          type='text'
+          placeholder='How may we assist you...'
+          name='message'
+          value={formData.message}
+          onChange={handleChange}
+        />
+        <br />
+        <button type='submit' onClick={handleSubmit}>
           <span>Submit</span>
         </button>
-        </div>
+      </div>
 
         <div className='additional'>
           <h2>ADDITIONAL <span>CONTACT </span>CONTACT <span>INFO</span></h2>

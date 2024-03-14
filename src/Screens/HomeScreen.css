@@ -1,5 +1,6 @@
 .containerr{
  background-color: #fff;
+ width: 100%;
 
 }
 .img-sliders{
@@ -251,7 +252,7 @@
 }
 @media screen and (max-width:780px){
    .containerr{
-    width: 120%;
+    width: 100%;
    }
    .img-sliders{
     margin-left: 0px;
@@ -261,7 +262,7 @@
    } 
    .img-sliders img{
     margin-left: 5px;
-      height: 60vh;
+      height: 35vh;
       width: 100%;
    }
    .img-sliders h1{

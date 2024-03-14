@@ -54,16 +54,16 @@ function NavBar() {
      
         <ul className={`nav-links ${isActive ? 'active': ''}`}>
           <li onClick={removeActive}><Link className='link' to='/'>HOME</Link> </li>
-          <li onClick={removeActive}><Link className='link' to='about'>ABOUT US </Link></li>
-          <li onClick={removeActive}><Link className='link' to='services'>SERVICES </Link> </li>
-          <li onClick={removeActive}><Link className='link' to='testimony'>TESTEMONY </Link></li>
-          <li onClick={removeActive}><Link className='link' to='contactUs'>CONTACT US </Link></li>
+          <li onClick={removeActive}><Link className='link' to='/about'>ABOUT US </Link></li>
+          <li onClick={removeActive}><Link className='link' to='/services'>SERVICES </Link> </li>
+          <li onClick={removeActive}><Link className='link' to='/testimony'>TESTEMONY </Link></li>
+          <li onClick={removeActive}><Link className='link' to='/contactUs'>CONTACT US </Link></li>
         </ul>
-        <div className='buttons'>
+        {/* <div className='buttons'>
           <button>
             Sign Up
           </button>
-        </div>
+        </div> */}
         <div className={`hambuger ${isActive ? 'active':''}`} onClick={toogleActiveClass}>
         <div className="bar"></div>
         <div className="bar"></div>
